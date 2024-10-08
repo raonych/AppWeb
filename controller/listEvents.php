@@ -9,7 +9,7 @@ if (mysqli_num_rows($res) > 0) {
         echo "<button type='submit'>", $id, " - ", $event['eventName'], " - ", $event['eventDate'], " - ", $event['eventInit'], " - ", $event['eventEnd'], " - ", $event['eventDesc'], " - ", $event['eventRes'];
         echo "</button>";
         echo "<input type='hidden' name='event' value='$id'>";
-        include "includes/updateLink.php";
+        include "./includes/updateLink.php";
         echo '</form>';    
     }
 } else {   

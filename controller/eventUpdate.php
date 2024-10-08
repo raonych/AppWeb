@@ -1,7 +1,7 @@
 <?php 
 
-require "..db/dbConnect.php";
-$eventId = $_POST['eventId'];
+require "../db/dbConnect.php";
+$eventId = $_POST['event'];
 
 if(isset($_POST['eventName'])){
     $eventName = $_POST['eventName'];
@@ -15,7 +15,7 @@ if(isset($_POST['eventInit'])){
     $eventInit = $_POST['eventInit'];
 }
 
-$con = mysqli_connect($host,$user,$pass,$db);
+$con = mysqli_connect($host,$user,$pass,$base);
 $response = mysqli_query(
     $con,
     "update event set eventName = '$eventName', eventDate = '$eventDate', eventInit = ' $eventInit' where eventId = $eventId; "
