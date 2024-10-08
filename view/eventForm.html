@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo evento</title>
+    <style>
+        body{
+            width: 100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/AppWeb/eventNew.php" method="post">
+        <label for="eventName">Insira o nome do evento:</label>
+        <input name="eventName"></input>
+        <label for="eventDate">Insira a data:</label>
+        <input type="date" name="eventDate"></input>
+        <label for="eventInit">Insira o Horário de inicio:</label>
+        <input type="time" name="eventInit"></input>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
