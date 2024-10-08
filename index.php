@@ -11,7 +11,7 @@
 
 <div class="event-box">
 <?php 
-require "listEvents.php";
+require "controller/listEvents.php";
 ?>
 </div>
 </body>
