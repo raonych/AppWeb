@@ -18,7 +18,7 @@ $response = mysqli_query(
     $con,
     "insert into event (eventName,eventDate,eventInit) VALUES ('$eventName', '$eventDate', '$eventInit')"
 );
-
+echo "Evento Cadastrado";
 mysqli_close($con);
 ?>
 
