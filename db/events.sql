@@ -3,7 +3,7 @@ create database events;
 use events;
 
 create table event(
-    eventId int(100) primary key,
+    eventId int(100) auto_increment primary key,
     eventName varchar(255) not null,
     eventDate date not null,
     eventInit time,

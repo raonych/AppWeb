@@ -11,13 +11,11 @@
 <body>
 <h1 id="monthHeader" class="monthHeader"></h1>
 <div class="calendar" id="calendar"></div>
-<button onclick="nextMonth()">Próximo mês</button> 
-<div id="event-box" class="event-box">
+ <div id="event-box" class="event-box">
 <?php 
 require "controller/listEvents.php";
 ?>
 </div>
-
 <script src="static/js/main.js"></script>
 </body>
 </html>

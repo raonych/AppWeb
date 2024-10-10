@@ -1,11 +1,14 @@
 body{
-    width: 100vw;
-    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height:90vh;
     margin: 0;
 }
 .event-box{
 
-   display: none;
+   width: 80%;
     
 }
 .event-box button{
@@ -24,8 +27,8 @@ body{
 }  
 .event-new{
     position: absolute;
-    top: 50px;
-    left: 100px;
+    bottom: 50px;
+    right: 100px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -39,6 +42,14 @@ body{
 .event-new:hover{
     box-shadow: -2px 6px 9px gray;
     padding: 8px;
-    top: 49px;
-    left: 99px;
 }
+.formDiv{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 320px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.show {display:block;}
