@@ -17,11 +17,17 @@
 <body>
     <form action="../controller/eventNew.php" method="post">
         <label for="eventName">Insira o nome do evento:</label>
-        <input name="eventName"></input>
+        <input name="eventName">
         <label for="eventDate">Insira a data:</label>
-        <input type="date" name="eventDate"></input>
+        <input type="date" name="eventDate">
         <label for="eventInit">Insira o Horário de inicio:</label>
-        <input type="time" name="eventInit"></input>
+        <input type="time" name="eventInit">
+        <label for="eventEnd">Insira o Horário de conclusão:</label>
+        <input type="time" name="eventEnd"/>
+        <label for="eventDesc">Descrição:</label>
+        <input type="text" name="eventDesc"/>
+        <label for="eventRes">Responsavel pelo evento:</label>
+        <input type="text" name="eventRes"/>
         <button type="submit">Enviar</button>
     </form>
 </body>

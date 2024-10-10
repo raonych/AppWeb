@@ -2,23 +2,10 @@
 
 require "../db/dbConnect.php";
 $eventId = $_POST['event'];
-
-if(isset($_POST['eventName'])){
-    $eventName = $_POST['eventName'];
-   
-}
-if(isset($_POST['eventDate'])){
-    $eventDate = $_POST['eventDate'];
-
-}
-if(isset($_POST['eventInit'])){
-    $eventInit = $_POST['eventInit'];
-}
-
-$con = mysqli_connect($host,$user,$pass,$base);
+require "../includes/pullEvents.php";
 $response = mysqli_query(
     $con,
-    "update event set eventName = '$eventName', eventDate = '$eventDate', eventInit = ' $eventInit' where eventId = $eventId; "
+    "update event set eventName = '$eventName', eventDate = '$eventDate', eventInit = ' $eventInit', eventEnd = '$eventEnd', eventDesc = '$eventDesc', eventRes = '$eventRes' where eventId = $eventId; "
 );
 
 $res = mysqli_query(
