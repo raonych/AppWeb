@@ -11,7 +11,7 @@ body{
    width: 80%;
     
 }
-.event-box button{
+.eventButton{
     width: 100%;
     margin: 5px;
     font-weight: bold;  
@@ -21,7 +21,7 @@ body{
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
 } 
-.event-box button:hover{
+.eventButton:hover{
     background-color: beige;
     box-shadow: 3px 3px 3px gray;
 }  
@@ -44,10 +44,14 @@ body{
     padding: 8px;
 }
 .formDiv{
-    display: none;
+  display: none;
   position: absolute;
+  top: 20%;
+  left: 20%;
+  min-width: 50%;
+  height: 40%;
   background-color: #f1f1f1;
-  min-width: 320px;
+  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

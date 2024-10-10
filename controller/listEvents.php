@@ -6,7 +6,7 @@ if (mysqli_num_rows($res) > 0) {
     while($event = mysqli_fetch_array($res)){
         
         $id = $event['eventId'];
-        echo "<button id='$id' onclick='myFunction(event)'>", $id, " - ", $event['eventName'], " - ", $event['eventDate'];
+        echo "<button id='$id' class='eventButton' onclick='myFunction(event)'>", $id, " - ", $event['eventName'], " - ", $event['eventDate'];
         echo "</button>";
         echo "<div id='form$id' class='formDiv'>";
         echo "<input type='hidden' id='event' name='event' value='$id'>";
