@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/newForm.css">
     <title>Novo evento</title>
-    <style>
-        body{
-            width: 100vw;
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
     <form action="../controller/eventNew.php" method="post">
         <label for="eventName">Insira o nome do evento:</label>
-        <input name="eventName">
+        <input name="eventName" required>
         <label for="eventDate">Insira a data:</label>
-        <input type="date" name="eventDate">
+        <input type="date" name="eventDate" required>
         <label for="eventInit">Insira o Horário de inicio:</label>
         <input type="time" name="eventInit">
         <label for="eventEnd">Insira o Horário de conclusão:</label>

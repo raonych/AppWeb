@@ -3,6 +3,8 @@
 require "../db/dbConnect.php";
 $eventId = $_POST['event'];
 require "../includes/pullEvents.php";
+
+$link = "../static/css/displayUpdate";
 $response = mysqli_query(
     $con,
     "update event set eventName = '$eventName', eventDate = '$eventDate', eventInit = ' $eventInit', eventEnd = '$eventEnd', eventDesc = '$eventDesc', eventRes = '$eventRes' where eventId = $eventId; "
