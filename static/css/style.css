@@ -66,34 +66,34 @@ body {
     width: 90vw;
     height: 90vh;
     margin: 0;
-    background-color: #f0f0f0; /* Fundo mais claro */
+    background-color: #f0f0f0; 
 }
 
 /* Event Box */
 .event-box {
     width: 80%;
-    padding: 20px; /* Adiciona espaçamento interno */
-    background-color: #ffffff; /* Fundo branco para destaque */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Event Buttons */
 .eventButton {
     width: 100%;
-    margin: 5px 0; /* Ajusta margens verticais */
+    margin: 5px 0; 
     font-weight: bold;
-    font-size: 20px; /* Tamanho de fonte mais adequado */
-    background-color: transparent; /* Fundo transparente */
-    border: none; /* Remove a borda */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    font-size: 20px; 
+    background-color: transparent; 
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
 }
 
 .eventButton:hover {
-    background-color: #f8e4b9; /* Cor de fundo ao passar o mouse */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    background-color: #f8e4b9; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); 
 }
 
 /* New Event Button */
@@ -102,78 +102,78 @@ body {
     bottom: 50px;
     right: 100px;
     text-decoration: none;
-    color: #333; /* Cor do texto */
+    color: #333; 
     font-weight: bold;
-    font-size: 20px; /* Tamanho de fonte consistente */
-    padding: 10px 15px; /* Ajusta o espaçamento */
-    border-radius: 12px; /* Cantos arredondados */
-    box-shadow: -2px 4px 9px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    background-color: #e0e0e0; /* Fundo cinza claro */
-    transition: padding 0.2s; /* Transição suave */
+    font-size: 20px; 
+    padding: 10px 15px; 
+    border-radius: 12px; 
+    box-shadow: -2px 4px 9px rgba(0, 0, 0, 0.2); 
+    background-color: #e0e0e0; 
+    transition: padding 0.2s; 
 }
 
 .event-new:hover {
-    box-shadow: -2px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
-    padding: 11px 16px; /* Aumenta o espaçamento ao passar o mouse */
+    box-shadow: -2px 6px 12px rgba(0, 0, 0, 0.3); 
+    padding: 11px 16px; 
 }
 
 /* Form Styling */
 .formDiv {
-    display: none; /* Mantém escondido inicialmente */
+    display: none; 
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza o formulário */
-    min-width: 400px; /* Largura mínima do formulário */
-    height: auto; /* Altura automática */
-    background-color: #ffffff; /* Fundo branco */
-    padding: 20px; /* Espaçamento interno */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    border-radius: 10px; /* Cantos arredondados */
-    z-index: 1; /* Garante que fique acima de outros elementos */
+    transform: translateX(-50%); 
+    min-width: 400px; 
+    height: auto;
+    background-color: #ffffff; 
+    padding: 20px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    z-index: 1; 
 }
 
 /* Input Fields */
 .inputField {
     width: 100%;
-    padding: 10px; /* Espaçamento interno */
-    margin: 10px 0; /* Margem entre campos */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 5px; /* Cantos arredondados */
-    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
 }
 
 /* Submit Button */
 .submitButton {
     width: 100%;
     padding: 10px;
-    margin-top: 15px; /* Espaçamento acima do botão */
+    margin-top: 15px; 
     font-weight: bold;
     font-size: 20px;
-    background-color: #007bff; /* Cor primária */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Cursor de ponteiro */
-    transition: background-color 0.3s; /* Transição para efeito hover */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .submitButton:hover {
-    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
+    background-color: #0056b3; 
 }
 
 /* Event List Styling */
 .eventList {
-    margin-top: 20px; /* Espaçamento acima da lista de eventos */
+    margin-top: 20px;
     padding: 10px;
-    border-top: 1px solid #ccc; /* Linha divisória */
+    border-top: 1px solid #ccc;
 }
 
 .eventItem {
     padding: 15px;
     margin: 10px 0;
-    background-color: #f9f9f9; /* Fundo levemente cinza */
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 .show {display:block;}

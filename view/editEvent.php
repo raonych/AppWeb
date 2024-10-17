@@ -4,7 +4,7 @@
     }
     $id = $_POST['event'];
     switch ($pagina) {
-        case 'update': $link = '../static/css/editForm.css'; break;
+        case 'update': $link = '../static/css/Form.css'; break;
         
         break;
         
