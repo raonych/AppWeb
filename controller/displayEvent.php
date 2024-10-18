@@ -8,5 +8,6 @@ while($event = mysqli_fetch_array($res)){
 }
 
 include "../includes/updateLink.php";
+include "../includes/homeLink.php";
 mysqli_close($con);
 ?>

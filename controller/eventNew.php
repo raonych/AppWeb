@@ -9,6 +9,7 @@ $response = mysqli_query(
     VALUES ('$eventName', '$eventDate', '$eventInit','$eventEnd','$eventDesc','$eventRes')"
 );
 echo "Evento Cadastrado";
+include "../includes/homeLink.php";
 mysqli_close($con);
 ?>
 
