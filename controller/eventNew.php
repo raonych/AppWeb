@@ -8,8 +8,7 @@ $response = mysqli_query(
     "insert into event (eventName,eventDate,eventInit,eventEnd,eventDesc,eventRes) 
     VALUES ('$eventName', '$eventDate', '$eventInit','$eventEnd','$eventDesc','$eventRes')"
 );
-echo "Evento Cadastrado";
-include "../includes/homeLink.php";
+header('location:../index.php?pagina=home');
 mysqli_close($con);
 ?>
 

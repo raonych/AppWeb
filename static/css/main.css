@@ -1,75 +1,56 @@
-/*body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    height:90vh;
-    margin: 0;
-}
-.event-box{
-
-   width: 80%;
-    
-}
-.eventButton{
-    width: 100%;
-    margin: 5px;
-    font-weight: bold;  
-    font-size: 23px;
-    background-color: none;
-    border-color: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
-} 
-.eventButton:hover{
-    background-color: beige;
-    box-shadow: 3px 3px 3px gray;
-}  
-.event-new{
-    position: absolute;
-    bottom: 50px;
-    right: 100px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 23px;
-    padding: 7px;
-    border-radius: 12px;
-    box-shadow: -2px 4px 9px gray;
-    background-color: rgb(240, 240, 240);
-}
-
-.event-new:hover{
-    box-shadow: -2px 6px 9px gray;
-    padding: 8px;
-}
-.formDiv{
-  display: none;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  min-width: 50%;
-  height: 40%;
-  background-color: #f1f1f1;
-  
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.show {display:block;}
-*/
-/* Body Styling */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-/* Event Box */
+.contentInput {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
 .event-box {
     width: 80%;
     padding: 20px; 
@@ -125,11 +106,25 @@ body {
     left: 50%;
     transform: translateX(-50%); 
     min-width: 600px; 
-    height: auto;
+    min-height: 120px;
     background-color: #ffffff; 
     padding: 20px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;
     z-index: 1; 
 }
-.show {display:block;}
+.show {display:block;} 
+.updateButton,
+.deleteButton{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+.updateButton{
+    top: 0;
+}
+.deleteButton{
+    top:60px;
+}

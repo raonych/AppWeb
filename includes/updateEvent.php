@@ -1,12 +1,12 @@
 <?php
-require "../db/dbConnect.php";
-
+require "db/dbConnect.php";
+if(isset($_GET['event'])){
+    $id = $_GET['event'];
+}
 $res = mysqli_query($con, "SELECT * FROM event WHERE eventId = $id");
 $event = mysqli_fetch_array($res);
 
-$link = "../static/css/editForm";
-
-echo '<form action="../controller/eventUpdate.php" method="post">';
+echo '<form class="contentInput" action="controller/eventUpdate.php" method="post">';
 
 echo '<label for="eventName">Nome do Evento:</label>';
 echo '<input type="text" name="eventName" value="',$event['eventName'] ,'">';

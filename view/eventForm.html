@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/Form.css">
-    <title>Novo evento</title>
-</head>
-<body>
-    <form action="../controller/eventNew.php" method="post">
-        <label for="eventName">Insira o nome do evento:</label>
-        <input name="eventName" required>
-        <label for="eventDate">Insira a data:</label>
-        <input type="date" name="eventDate" required>
-        <label for="eventInit">Insira o Horário de inicio:</label>
-        <input type="time" name="eventInit">
-        <label for="eventEnd">Insira o Horário de conclusão:</label>
-        <input type="time" name="eventEnd"/>
-        <label for="eventDesc">Descrição:</label>
-        <input type="text" name="eventDesc"/>
-        <label for="eventRes">Responsavel pelo evento:</label>
-        <input type="text" name="eventRes"/>
-        <button type="submit">Enviar</button>
+<form class="contentInput" action="controller/eventNew.php" method="post">
+    <label for="eventName">Insira o nome do evento:</label>
+    <input name="eventName" required>
+    <label for="eventDate">Insira a data:</label>
+    <input type="date" name="eventDate" required>
+    <label for="eventInit">Insira o Horário de inicio:</label>
+    <input type="time" name="eventInit">
+    <label for="eventEnd">Insira o Horário de conclusão:</label>
+    <input type="time" name="eventEnd"/>
+    <label for="eventDesc">Descrição:</label>
+    <input type="text" name="eventDesc"/>
+    <label for="eventRes">Responsavel pelo evento:</label>
+    <input type="text" name="eventRes"/>
+    <button type="submit">Enviar</button>
     </form>
-</body>
-</html>

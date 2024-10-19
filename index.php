@@ -1,19 +1,29 @@
+<?php 
+    if(isset($_GET['pagina'])){
+        $pagina = $_GET['pagina'];
+    }else{
+      $pagina = 'home';
+    };
+    
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planner</title>
-  <link rel="stylesheet" href="static/css/style.css">
-  <link rel="stylesheet" href="static/css/styleCalendar.css">
+  <link rel="stylesheet" href="static/css/main.css">
 </head>
-<a class="event-new" href="view/eventForm.html">Novo evento</a>
+<a class="event-new" href="?pagina=new">Novo evento</a>
 <body>
-<h1 id="monthHeader" class="monthHeader"></h1>
-<div class="calendar" id="calendar"></div>
- <div id="event-box" class="event-box">
-<?php 
-require "controller/listEvents.php";
+<?php  
+    switch ($pagina) {
+        case 'update': include 'includes/updateEvent.php'; break;
+        case 'new': include 'view/eventForm.html'; break;
+        case 'home': include "controller/listEvents.php"; break;
+        
+        
+    }
 ?>
 </div>
 <script src="static/js/main.js"></script>

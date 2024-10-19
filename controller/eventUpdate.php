@@ -19,7 +19,7 @@ while($event = mysqli_fetch_array($res)){
     echo $event['eventId']," ", $event['eventName']," ",$event['eventDate'],$event['eventInit'],$event['eventEnd'],$event['eventDesc'],$event['eventRes'],"</br>";
 }
 
-
+header('location:../index.php?pagina=home');
 include "../includes/homeLink.php";
 mysqli_close($con);
 ?>
