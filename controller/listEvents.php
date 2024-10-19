@@ -9,16 +9,30 @@ if (mysqli_num_rows($res) > 0) {
         echo "<button id='$id' class='eventButton' onclick='myFunction(event)'>", $event['eventName'], " - ", $event['eventDate'];
         echo "</button>";
         echo "<div id='form$id' class='formDiv'>";
-        echo "<input type='hidden' id='event' name='event' value='$id'>";
-        echo "Nome do evento: ",$event['eventName'],"</br>";
-        echo "Data do evento: ",$event['eventDate'],"</br>";
-        if(isset($event['eventInit']) && $event['eventInit'] != '00:00:00'){echo "Horário de inicio: ", $event['eventInit'],"</br>";};
-        if(isset($event['eventEnd']) && $event['eventEnd']!= '00:00:00'){echo "Horário de conclusão: ",$event['eventEnd'],"</br>";};
-        if(isset($event['eventDesc']) && $event['eventDesc'] != null){echo "Descrição:",$event['eventDesc'],"</br>";};
-        if(isset($eventRes['eventRes']) && $eventRes['eventRes'] != null){echo "Responsável pelo evento:",$event['eventRes'],"</br>";};
+        echo "<h2>",$event['eventName'],"</h2>";
+        echo "<p>Data do evento: ",$event['eventDate'],"</p>";
+
+        if(isset($event['eventInit']) && $event['eventInit'] != '00:00:00'){
+            echo "<p>Horário de inicio: ", $event['eventInit'],"</p>";
+        }
+
+        if(isset($event['eventEnd']) && $event['eventEnd'] != '00:00:00'){
+            echo "<p>Horário de conclusão: ",$event['eventEnd'],"</p>";
+        }
+
+        if(isset($event['eventDesc']) && $event['eventDesc'] != null){
+            echo "<div class='eventDesc'>Descrição: ",$event['eventDesc'],"</div>";
+        }
+
+        if(isset($event['eventRes']) && $event['eventRes'] != null){
+            echo "<p>Responsável pelo evento: ",$event['eventRes'],"</p>";
+        }
+
         include "./includes/updateLink.php";
         include "./includes/deleteLink.php";
-        echo '</div>';    
+        echo "<button id='$id' class='closeWindow' onclick='myFunction(event)'>X</button>";
+        echo "</div>";
+  
     }
 } else {   
     echo '<h3>Nenhum evento cadastrado</h3>';
