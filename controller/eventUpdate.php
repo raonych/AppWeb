@@ -20,7 +20,7 @@ while($event = mysqli_fetch_array($res)){
 }
 
 
-echo "../includes/index.php";
+include "../includes/homeLink.php";
 mysqli_close($con);
 ?>
 

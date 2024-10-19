@@ -16,6 +16,7 @@ $res = mysqli_query(
 
 echo "Evento deletado";
 
+include "../includes/homeLink.php";
 
 mysqli_close($con);
 ?>

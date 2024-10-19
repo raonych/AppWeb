@@ -10,7 +10,12 @@ if (mysqli_num_rows($res) > 0) {
         echo "</button>";
         echo "<div id='form$id' class='formDiv'>";
         echo "<input type='hidden' id='event' name='event' value='$id'>";
-        echo $event['eventId']," ", $event['eventName']," ",$event['eventDate']," ",$event['eventInit']," ",$event['eventEnd']," ",$event['eventDesc']," ",$event['eventRes'];
+        echo "Nome do evento: ",$event['eventName'],"</br>";
+        echo "Data do evento: ",$event['eventDate'],"</br>";
+        if(isset($event['eventInit'])){echo "Horário de inicio: ", $event['eventInit'],"</br>";};
+        if(isset($event['eventEnd'])){echo "Horário de conclusão: ",$event['eventEnd'],"</br>";};
+        if(isset($event['eventDesc'])){echo "Descrição:",$event['eventDesc'],"</br>";};
+        if(isset($eventRes['eventRes'])){echo "Responsável pelo evento:",$event['eventRes'],"</br>";};
         include "./includes/updateLink.php";
         include "./includes/deleteLink.php";
         echo '</div>';    
