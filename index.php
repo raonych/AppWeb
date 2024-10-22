@@ -14,9 +14,12 @@
     <title>Planner</title>
   <link rel="stylesheet" href="static/css/main.css">
 </head>
+<?php include 'includes/searchBar.php'; ?>
 <a class="event-new" href="?pagina=new">Novo evento</a>
+
 <body>
-<?php  
+<?php
+ 
     switch ($pagina) {
         case 'update': include 'includes/updateEvent.php'; break;
         case 'new': include 'view/eventForm.html'; break;
@@ -24,6 +27,8 @@
         
         
     }
+
+    if(isset($searchResponse)){echo $searchResponse;};
 ?>
 </div>
 <script src="static/js/main.js"></script>

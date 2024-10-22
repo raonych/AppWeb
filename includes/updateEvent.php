@@ -21,7 +21,7 @@ echo '<label for="eventEnd">Horário de Conclusão:</label>';
 echo '<input type="time" name="eventEnd" value="',$event['eventEnd'] ,'">';
 
 echo '<label for="eventDesc">Descrição:</label>';
-echo '<input type="text" name="eventDesc" value="',$event['eventDesc'] ,'">';
+echo '<textarea class="input-desc" type="text" name="eventDesc"','">',$event['eventDesc'],'</textarea>';
 
 echo '<label for="eventRes">Responsável pelo Evento:</label>';
 echo '<input type="text" name="eventRes" value="',$event['eventRes'] ,'">';
