@@ -19,11 +19,12 @@ while($eventSearchEqual = mysqli_fetch_array($response)){
     echo "</br>";
 };
 
-if($res != $response){
+
 while($eventSearchLike = mysqli_fetch_array($res)){
     echo $eventSearchLike['eventName'];
+    echo "</br>";
 };
-}
+
 mysqli_close($con);
 ?>
 
