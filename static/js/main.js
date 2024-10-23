@@ -19,22 +19,3 @@ function myFunction(event) {
 
 
 
-
-  /*date = getElementsByClassName('.eventButton').value;
-  nums = [];
-  currentNumber = "";
-  for(let i = 0; i < date.length; i ++){
-    if(i == "-"){
-      for(let x = 0; x < date.length; i++){
-        if("1234567890".includes(i)){
-          currentNumber += i
-        }else if(i = "-"){
-          nums.push(currentNumber);
-        }
-      }
-    }else{
-      i = "";
-    }
-  }
-
-*/

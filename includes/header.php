@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="header">
-    <a href="index.php">home</a>
+    <a class="home" href="index.php">home</a>
     <?php include 'includes/searchBar.php'; ?>
     <a class="event-new" href="?pagina=new"><?php include "static/svg/plus.html"?> Novo evento</a>
 </div>
