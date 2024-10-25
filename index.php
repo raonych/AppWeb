@@ -16,7 +16,6 @@ include 'includes/header.php';
         
     }
 
-    if(isset($_GET['searchResponse'])){echo $_GET['searchResponse'];};
 ?>
 </div>
 <script src="static/js/main.js"></script>
